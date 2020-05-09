@@ -1,0 +1,592 @@
+/******************** Universal Styles ********************/
+/* Defaults */
+body {
+    color: #FFF;
+    background: #19AA8D;
+    font-family: 'Roboto', sans-serif;
+}
+
+/******************** Shared Styles ********************/
+/* Containers */
+.login-signup-form, .dashboard, .register-device-form, .activity-log, .device-settings, .account-settings {
+    width: 390px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+}
+
+/* Sub-Containers */
+.login-signup-form form, .dashboard .modules, .register-device-form #registration, .activity-log .activity, .device-settings .settings, .account-settings .settings {
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+}
+
+/* Page Headers */
+.login-signup-form h2, .dashboard h2, .register-device-form h2, .activity-log h2, .device-settings h2, .account-settings h2 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Horizontal Lines */
+.login-signup-form hr, .dashboard hr, .register-device-form hr, .activity-log hr, .device-settings hr, .account-settings hr {
+    margin: 0 -30px 20px;
+}
+
+/* Card Titles */
+.login-signup-form .card-title, .dashboard .card-title, .register-device-form .card-title, .device-settings .card-title, .account-settings .card-title {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+/* Form Fields */
+.login-signup-form .form-group, .register-device-form .form-group, .device-settings .form-group, .account-settings .form-group {
+    margin-bottom: 20px;
+}
+
+/* Form Field Input Bars */
+.login-signup-form .form-control, .register-device-form .form-control, .device-settings .form-control, .account-settings .form-control {
+    min-height: 38px;
+    box-shadow: none !important;
+}
+
+/* Form Field Input Bars (Focus) */
+.form-control, .form-control:focus {
+    border-color: #E1E1E1;
+    border-radius: 3px;
+}
+
+/* Input Requirements Box */
+#name-req, #location-req, #user-req, #pass-req, #pass-match {
+    display: none;
+    color: #333;
+}
+
+/* Input Requirements List */
+#name-req p, #location-req p, #user-req p, #pass-req p, #pass-match p {
+    font-size: 10px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+/* Input Requirements (Met) */
+.valid {
+    color: #19AA8D;
+}
+
+/* Input Requirements (Unmet) */
+.invalid {
+    color: #AA1936;
+}
+
+/* Input Feedback */
+.login-signup-form .form-feedback, .register-device-form .form-feedback, .device-settings .form-feedback, .account-settings .form-feedback {
+    margin-left: 10px;
+}
+
+/* Form Links */
+.login-signup-form form a, .register-device-form .software, .activity-log a, .device-settings .redirect, .device-settings .edit, .account-settings a {
+    color: #19AA8D;
+    text-decoration: none;
+}
+
+/* Form Links (Hover) */
+.login-signup-form form a:hover, .register-device-form .software:hover, .activity-log a:hover, .device-settings .redirect:hover, .device-settings .edit:hover, .account-settings a:hover {
+    text-decoration: underline;
+}
+
+/* Checkboxes/Radio Button Color */
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #19AA8D;
+    background-color: #19AA8D;
+}
+
+/* Checkboxes/Radio Button Size */
+.custom-control-label::before {
+    top: 2.8px;
+    width: 14px;
+    height: 14px;
+    border: #CACACA solid 1px;
+}
+
+/* Submit Buttons */
+.login-signup-form .login-signup-btn, .register-device-form .register-device-btn, .account-settings .save-profile-btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #19AA8D;
+    border: none;
+    min-width: 140px;
+    border-radius: 3px;
+}
+
+/* Buttons (Hover) */
+.login-signup-form .btn:hover, .login-signup-form .btn:focus, .dashboard .btn:hover, .dashboard .btn:focus, .register-device-form .btn:hover, .register-device-form .btn:focus, .device-settings .btn:hover, .device-settings .btn:focus, .account-settings .btn:hover, .account-settings btn:focus {
+    background: #179B81;
+    outline: none;
+}
+
+
+/* Dashboard/Logout Links */
+.account-settings .btn-link, .register-device-form .btn-link, .activity-log .btn-link, .device-settings .btn-link {
+    color: #FFF;
+    font-size: 16px;
+    background: #19AA8D;
+    border: none;
+    border-radius: 3px;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0 30px;
+}
+
+/* Dashboard/Logout Links (Hover) */
+.account-settings .btn-link:hover, .register-device-form .btn-link:hover, .activity-log .btn-link:hover, .device-settings .btn-link:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Profile/Device Card Rows */
+.account-settings .row, .device-settings .row {
+    margin: 10px -15px;
+}
+
+/* Form Field Icon Box */
+.login-signup-form .input-group-text, .register-device-form .input-group-text, .device-settings .input-group-text, .account-settings .input-group-text {
+    border-color: #E1E1E1;
+    max-width: 42px;
+    text-align: center;
+}
+
+/* Form Field Icons */
+.form-icon {
+    font-size: 20px;
+}
+
+/* Email Icon */
+.fa-paper-plane {
+    font-size: 16px;
+}
+
+/* Confirm Password Icon (Checkmark) */
+.fa-check {
+    color: #FFF;
+    left: 18px;
+    top: 20px;
+    font-size: 7px;
+    position: absolute;
+}
+
+/******************** Login/Sign Up Styles ********************/
+/* Checkboxes */
+.login-signup-form input[type="checkbox"] {
+    height: 19.34px;
+}
+
+/* Checkbox Container */
+.login-signup-form .custom-control {
+    min-height: 0;
+}
+
+/* Checkbox Radius */
+.login-signup-form .custom-checkbox .custom-control-label::before {
+    border-radius: 3px;
+}
+
+/* Checkbox Checkmark */
+.login-signup-form .custom-control-label::after {
+    top: 2px;
+    left: -24.5px;
+}
+
+/* Checkbox Label */
+.login-signup-form label {
+    font-weight: normal;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* Terms of Use & Privacy Policy */
+.login-signup-form .terms-of-use, .login-signup-form .privacy-policy {
+    font-size: 13px;
+}
+
+/* Footer Row */
+.login-signup-form .footer {
+    margin: 10px 0;
+}
+
+/* Footer Links */
+.login-signup-form a {
+    color: #FFF;	
+    text-decoration: underline;
+}
+
+/* Footer Links (Hover) */
+.login-signup-form a:hover {
+    text-decoration: none;
+}
+
+/******************** Dashboard Styles *******************/
+/* Module Cards */
+.dashboard .card {
+    margin: 19px 0;
+    border-radius: 3px;
+}
+
+/* Module Card Bodies */
+.dashboard .card-body {
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+/* Module Card Rows */
+.dashboard .row {
+    margin-right: -25px;
+    margin-left: -10px;
+}
+
+/* Module Card Columns */
+.dashboard .col-auto {
+    height: 69px;
+}
+
+/* Module Card Buttons */
+.dashboard .module-btn {        
+    font-size: 16px;
+    background: #19AA8D;
+    border: none;
+    height: 100%;
+    width: 69px;
+    border-radius: 2px;
+}
+
+/* Logout Link */
+.dashboard .btn-link {
+    color: #FFF;
+    font-size: 16px;
+    background: #19AA8D;
+    border: none;
+    border-radius: 3px;
+    text-decoration: underline;
+    padding: 0;
+}
+
+/* Logout Link (Hover) */
+.dashboard .btn-link:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+    
+/* Module Card Icons */
+.dashboard .module-icon {
+    font-size: 1.75em;
+    vertical-align: middle;
+}
+
+/* User-Cog Icon */
+.dashboard .fa-user-cog {
+    padding-left: 2px;
+}
+
+/******************** Register Device Styles *******************/
+/* Instruction List */
+.register-device-form .instructions {
+    padding-left: 0;
+    margin: 0 0 0 20px;
+}
+
+/* Instruction Steps */
+.register-device-form .steps {
+    font-size: 13px;
+}
+
+/* Instruction Step 2 */
+.register-device-form .step2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Instruction Step 3 */
+.register-device-form .step3 {
+    margin-bottom: 2px;
+}
+
+/* Key Icon */
+.register-device-form .fa-key {
+    font-size: 18px;
+}
+
+/******************** Activity Log Styles *******************/
+/* Log Window */
+.activity-log .window {
+    background: rgba(0,0,0,.03);
+    border: #E1E1E1 solid 1px;
+    border-radius: 3px;
+    height: 351px;
+    overflow: auto;
+}
+
+/* Device Data */
+.activity-log .data {
+    margin-left: 10px;
+}
+
+/* Device Name/Location */
+.activity-log .name-location {
+    font-size: 14px;
+}
+
+/* Message (No devices connected) */
+.activity-log .no-devices {
+    font-size: 13px;
+    text-align: center;
+    height: 349px;
+    padding: 147px 0;
+}
+
+/* Scrollbar */
+.activity-log .scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 3px;
+}
+
+/* Scrollbar Bar */
+.activity-log .scrollbar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5; 
+    border-radius: 3px;
+}
+
+/* Scrollbar Handle */
+.activity-log .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #1cc09f 0%, #16947b 100%);
+    background-image: linear-gradient(120deg, #1cc09f 0%, #16947b 100%);
+}
+
+/* Footer Row */
+.activity-log .footer {
+    margin: 10px -15px 10px -15px;
+}
+
+/******************** Device Settings Styles *******************/
+/* Device Card */
+.device-settings .card {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border-color: #E1E1E1;
+}
+
+/* Device Header */
+.device-settings .card-header {
+    padding: 5px 10px;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid #E1E1E1;
+}
+
+/* Device Info Column */
+.device-settings .device-info {
+    padding: 0 0 0 15px;
+    width: 100%;
+}
+
+/* Device Name */
+.device-settings .device-name {
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Device Location */
+.device-settings .device-location {
+    color: #999;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/* Edit Link Column */
+.device-settings .device-edit {
+    text-align: center;
+    padding: 0 15px 0 0;
+    max-width: 40px;
+}
+
+/* Edit Link */
+.device-settings .edit {
+    font-size: 13px;
+}
+
+/* Edit Form */
+.device-settings #change-device {
+    display: none;
+    margin-top: 15px;
+}
+
+/* Device Card Body */
+.device-settings .card-body {
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+/* Device Card Settings */
+.device-settings .settings-row {
+    margin: 10px 0;
+}
+
+/* Max Range Slider */
+.device-settings .slide-container {
+    padding: 0 10px;
+    width: 100%;
+    bottom: 2.25px;
+}
+
+/* Max Range Slider (Hover) */
+.device-settings .slider:hover {
+    opacity: 1;
+}
+
+/* Max Range Slider Values */
+.device-settings .slider-range {
+    max-height: 19.33px;
+    max-width: 37px;
+    padding: 0;
+    text-align: center;
+}
+
+/* Max Range Slider Bar */
+.device-settings .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4.5px;
+    background: #E1E1E1;
+    outline: none;
+    border-radius: 3px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* Max Range Slider Handle (Chrome, Opera, Safari, Edge) */
+.device-settings .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-color: #19AA8D;
+    background: #19AA8D;
+    cursor: pointer;
+}
+
+/* Max Range Slider Handle (Firefox) */
+.device-settings .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #19AA8D;
+    cursor: pointer;
+}
+
+/* Sensitivity/Show Activity Buttons */
+.device-settings .custom-control {
+    min-height: 0;
+    padding-left: 25.6px;
+}
+
+/* Sensitivity/Show Activity Button Image */
+.device-settings .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: none;
+}
+
+/* Edit Device Button */
+.device-settings .edit-device-btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #19AA8D;
+    border: none;
+    min-width: 70px;
+    border-radius: 3px;
+}
+
+/* Save Settings Button */
+.device-settings .set-device-btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #19AA8D;
+    border: none;
+    min-width: 70px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+/* Device Icon */
+.device-settings .fa-microchip {
+    font-size: 16px;
+}
+
+/* Location Icon */
+.device-settings .fa-map-marker-alt {
+    font-size: 22px;
+}
+
+/* Message (No devices connected) */
+.device-settings .no-devices {
+    font-size: 13px;
+    text-align: center;
+}
+
+/******************** Account Settings Styles *******************/
+/* Profile Card */
+.account-settings .card {
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+/* Profile Card Body */
+.account-settings .card-body {
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+/* Profile Card Columns */
+.account-settings .card p {
+    margin: 5px 0;
+}
+
+/* Label Column */
+.account-settings .profile-label {
+    text-align: right;
+    border-right: 1px solid #E1E1E1;
+    max-width: 90px;
+}
+
+/* User Information Column */
+.account-settings .profile-info {
+    padding: 0 0 0 15px;
+    width: 200px;
+}
+
+/* Email Overflow */
+.account-settings .overflow {
+    white-space: nowrap;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Edit Link Column */
+.account-settings .profile-edit {
+    text-align: center;
+    padding: 0 5px 0 0;
+    max-width: 50px;
+}
+
+/* Edit Forms */
+.account-settings #change-username, .account-settings #change-email, .account-settings #change-password {
+    display: none;
+}
